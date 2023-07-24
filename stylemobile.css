@@ -22,14 +22,17 @@ body{
     align-items: center;
 }
 div.container{
-    width: 1110px;
-    margin-top: 80px;
-    margin-bottom: 80px;
-    display: flex;
-    flex-direction: column;
-    row-gap: 53px;
+    width: 375px;
+    border: 1px solid;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    row-gap: 2rem;
+    padding: 15px;
+    padding-top: 20px;
 }
-
+ul{
+    display: hidden;
+}
 .navbar{
     display: flex;
     justify-content: space-between;
@@ -51,22 +54,12 @@ ul a:hover{
     color: var(--soft-red);
     cursor: pointer;
 }
-.main{
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    column-gap: 1.6rem;
-}
-.first{
-    display: flex;
-    flex-flow: column;
-    row-gap: 1.8rem;
-}
-.first2{
-    display: flex;
-    justify-content: space-between;
+.logo{
+    width: 80px;
+    height: 80px;
 }
 .title{
-    width: 300px;
+    /* width: 300px; */
 
 }
 .title h1{
@@ -74,13 +67,6 @@ ul a:hover{
     font-weight: 800;
     line-height: 1.05;
     margin-top: 6px;
-}
-
-.side{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    row-gap: 2.3rem;
 }
 .para{
     width: 350px;
@@ -112,8 +98,8 @@ button:hover{
     display: flex;
     flex-direction: column;
     row-gap: 1.9rem;
-    width: 353px;
-    height: 510px;
+    width: 345px;
+    height: 490px;
 }
 .aside h3{
     color: white;
